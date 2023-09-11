@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="shortcut icon" href="https://static-mh.content.disney.io/matterhorn/assets/favicon-94e3862e7fb9.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="containerz">
+    <h1 class="thankyou">Thank you for voting!</h1>
+    <p class="ref">Voting Reference No.: </p>
+    <p class="ref" id="numberz"></p>
+    <a href="https://www.disney.ph/"><button type="button" class="btnz">HOMEPAGE</button></a>
+</div>
+    
+    
+    
+    <script>
+            document.getElementById("numberz").innerHTML =
+            Math.floor(Math.random() * 1000);        
+    </script>
+    <style>
+        :root {
+  --mainColor: #33C9FF;
+  --sandBox: #1F2937;
+  --textColor: #ffffff;
+  --btnGreen: #21A656;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--textColor);
+}
+
+html, body {
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--mainColor);
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+body hr {
+  margin: 50px 0px;
+  width: 20vw;
+}
+
+.containerz {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  height: 50vh;
+  text-align: center;
+}
+
+.thankyou {
+  color: black;
+  font-family: "Dancing Script", cursive;
+  font-size: 5rem;
+}
+
+.ref {
+  color: black;
+  font-family: "Karla", sans-serif;
+}
+
+#numberz {
+  font-family: "Karla", sans-serif;
+  font-size: 4rem;
+}
+
+.btnz {
+  width: 6rem;
+  height: 3rem;
+  outline: none;
+  border: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 0.3rem;
+  background-color: #233c6b;
+  color: var(--textColor);
+  cursor: pointer;
+  font-family: inherit;
+  transition: ease 0.3s;
+}
+.btnz:hover {
+  color: #fff;
+  background-color: #465d7e;
+  transition: ease 0.3s;
+}
+.btnz:active {
+  color: #fff;
+  background-color: #2a4161;
+  transition: ease 0.3s;
+}
+</style>
+</body>
+</html>

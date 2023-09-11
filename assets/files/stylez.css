@@ -1,0 +1,303 @@
+:root {
+  --mainColor: #ffffff;
+  --sandBox: #1F2937;
+  --textColor: #000000;
+  --btnGreen: #21A656;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--textColor);
+}
+
+html, body {
+  height: 100vh;
+}
+
+body {
+  background-color: #F8F8F8;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.navbar .imahhe {
+  vertical-align: middle;
+}
+.navbar .navwrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  padding: 10px;
+}
+.navbar a, .navbar .navbar__menu {
+  margin: 0px 10px;
+  text-decoration: none;
+  color: black;
+  font-family: "Noto Sans", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .navbar__menu {
+    font-size: 0.8rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.headerpic img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.xd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #33C9FF;
+  height: 600px;
+}
+.xd #carouselExampleControls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.xd #carouselExampleControls .c-img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50px;
+}
+@media (max-width: 768px) {
+  .xd #carouselExampleControls {
+    height: 1000px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .xd {
+    height: 50%;
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #33C9FF;
+  width: 100%;
+}
+footer .somethhing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  width: 33%;
+  height: 500px;
+  margin: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+footer .somethhing img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer .somethhing h3 {
+  font-family: "Open Sans";
+  font-size: 0.7em;
+}
+footer .somethhing p {
+  color: #92999F;
+}
+footer .somethhing img, footer .somethhing h3, footer .somethhing p, footer .somethhing h1 {
+  margin-bottom: 15px;
+}
+
+.copyrights {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.copyrights .row1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 50%;
+}
+.copyrights .row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 20px;
+}
+.copyrights .row2 a {
+  margin: 0px 10px;
+  transition: ease 0.3s;
+  color: 333333;
+  text-decoration: none;
+  font-family: "Noto Sans", sans-serif;
+  color: black;
+}
+.copyrights .row2 a:hover {
+  color: red;
+  transition: ease 0.3s;
+}
+.copyrights .row2 a:active {
+  color: rgb(255, 81, 0);
+  transition: ease 0.3s;
+}
+.copyrights .row3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  font-size: 0.7rem;
+  color: rgba(51, 51, 51, 0.7803921569);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
+  footer .somethhing {
+    height: 30%;
+    width: 95vw;
+  }
+  footer .somethhing .details {
+    font-size: 1rem;
+  }
+  footer .somethhing img {
+    height: auto;
+    widows: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+button.buttonD {
+  display: inline-block;
+  padding: 15px 60px;
+  background: #0079ff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+button.buttonD:hover {
+  -webkit-animation-name: rubberBand;
+          animation-name: rubberBand;
+}
+
+@-webkit-keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.rubberBand {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+}
+
+#clickz {
+  text-decoration: none;
+}
+
+#testLime {
+  border-color: rgb(45, 45, 45);
+  background-color: rgb(171, 244, 39);
+  text-shadow: 0px 0px 2px rgb(0, 0, 0);
+  font-family: "Amaranth", sans-serif;
+  font-size: 1.2rem;
+}
+
+#testYellow {
+  border-color: rgb(45, 45, 45);
+  background: rgb(248, 252, 32);
+  text-shadow: 0px 0px 2px rgb(0, 0, 0);
+  font-family: "Amaranth", sans-serif;
+  font-size: 1.2rem;
+}
+
+#testBlue {
+  border-color: rgb(45, 45, 45);
+  background: #1fcaf5;
+  text-shadow: 0px 0px 2px rgb(0, 0, 0);
+  font-family: "Amaranth", sans-serif;
+  font-size: 1.2rem;
+}
+
+#numberz {
+  font-size: 1.5rem;
+}/*# sourceMappingURL=stylez.css.map */
